@@ -1,0 +1,95 @@
+import axios from 'axios'
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
+
+const Addevent_ticket = () => {
+  // declaring state variables
+  const [product_name,setProductName]=useState("")
+  const[product_description,setProductDescription]=useState("")
+  const[product_cost,setProductCost]=useState("")
+  const[product_photo,setProductPhoto]=useState("")
+
+  // Status messages
+  const[loading,setLoading]=useState("")
+  const[error,setError]=useState("")
+  const[success,setSuccess]=useState("")
+
+  // function to add products database
+  const handleSubmit = async(e)=>{
+    e.preventDefault();
+    setLoading("Please wait...")
+  
+  try {
+    // retrieving product details
+    const formData=new FormData();
+    formData.append("product_name",product_name)
+    formData.append("product_description",product_description)
+    formData.append("product_cost",product_cost)
+    formData.append("product_photo",product_photo)
+
+    // Adding base url to post data
+    const response = await axios.post("http://michaelhyrax.alwaysdata.net/api/add_product", formData)
+    setLoading("")
+    setSuccess(response.data.success)
+
+
+    
+  } catch (error) {
+    setError(error.message)
+    
+  }
+}
+  return (
+    <div className='row justify-content-center '>
+      <div className='card shadow col-md-6 mt-2 p-3 add_product '>
+        <h1 className='add_product  text-center'>Add an event Ticket</h1>
+        {/* Binding variables */}
+        <p>{loading}</p>
+        <p>  {error} </p>
+        <p> {success} </p>
+
+
+        <nav className='text-center w-100'>
+          <Link to="/" className='btn btn-dark justify-content-center m-80'>See event ticket</Link>
+        </nav>
+      <form action="" onSubmit={handleSubmit}
+      className=' signin_form'>
+        <label htmlFor="">Product name</label><br />
+        <input 
+        className='form-control' 
+        type="text"
+         placeholder='Product name' 
+         onChange={(e)=>setProductName(e.target.value)} 
+         required/><br />
+         <label htmlFor="">Product description</label><br />
+        <textarea 
+        className='form-control' 
+        
+        placeholder='Product description'
+         onChange={(e)=>setProductDescription(e.target.value)}
+         required> </textarea><br />
+         <label htmlFor="">Product cost</label><br />
+        <input 
+        className='form-control'
+         type="number"  
+         placeholder='Product cost' 
+         onChange={(e)=>setProductCost(e.target.value)}/><br />
+         <label htmlFor="">Product photo</label><br />
+        <input 
+        className='form-control' 
+        type="file" 
+        onChange={(e)=>setProductPhoto(e.target.files[0])}
+         required/><br />
+        <input
+         type="submit" 
+        value="Add product" 
+       className='submit_button w-100' 
+       
+      />
+      </form>
+      </div>
+    </div>
+  )
+}
+
+export default Addevent_ticket
