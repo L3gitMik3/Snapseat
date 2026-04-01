@@ -40,9 +40,9 @@ const Addevent_ticket = () => {
   }
 }
   return (
-    <div className='row justify-content-center '>
+    <div className='row justify-content-center p-3'>
       <div className='card shadow col-md-6 mt-2 p-3 add_product '>
-        <h1 className='add_product  text-center'>Add an event Ticket</h1>
+        <h1 className='add_product  text-center'>Post an Event</h1>
         {/* Binding variables */}
         <p>{loading}</p>
         <p>  {error} </p>
@@ -54,27 +54,35 @@ const Addevent_ticket = () => {
         </nav>
       <form action="" onSubmit={handleSubmit}
       className=' signin_form'>
-        <label htmlFor="">Product name</label><br />
+        <label htmlFor="">Event name</label><br />
         <input 
         className='form-control' 
         type="text"
-         placeholder='Product name' 
+         placeholder='Enter the event name' 
          onChange={(e)=>setProductName(e.target.value)} 
          required/><br />
-         <label htmlFor="">Product description</label><br />
+         <label htmlFor="">Event description</label><br />
         <textarea 
         className='form-control' 
         
-        placeholder='Product description'
+        placeholder='Enter the Event description'
          onChange={(e)=>setProductDescription(e.target.value)}
-         required> </textarea><br />
-         <label htmlFor="">Product cost</label><br />
+            required> </textarea><br />
+          
+             <label htmlFor="">Event Date</label><br />
+        <input 
+        className='form-control' 
+        type="date"
+         placeholder='Enter the event date' 
+         onChange={(e)=>setProductName(e.target.value)} 
+         required/><br />
+         <label htmlFor="">Ticket cost in Kenyan Shillings</label><br />
         <input 
         className='form-control'
          type="number"  
-         placeholder='Product cost' 
+         placeholder='Enter the Ticket cost' 
          onChange={(e)=>setProductCost(e.target.value)}/><br />
-         <label htmlFor="">Product photo</label><br />
+         <label htmlFor="">Ticket photo</label><br />
         <input 
         className='form-control' 
         type="file" 
@@ -82,7 +90,7 @@ const Addevent_ticket = () => {
          required/><br />
         <input
          type="submit" 
-        value="Add product" 
+        value="Add Ticket" 
        className='submit_button w-100' 
        
       />

@@ -47,7 +47,7 @@ const handleSignin=async(e)=> {
 }
 
   return (
-    <div className='row justify-content-center '>
+    <div className='row justify-content-center p-3 '>
       <div className='card shadow col-md-6 mt-2 p-3 ' >
         <h1 className='text-center'>Log in</h1>
      ``

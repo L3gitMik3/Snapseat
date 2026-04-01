@@ -9,31 +9,32 @@ import Getevent_ticket from './components/Getevent_ticket';
 import Signin from './components/Signin';
 import Mpesapayment from './components/Mpesapayment';
 import Footer from './components/Footer'
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <Router>
       <div className='App'>
-        <div className='App-header'>
-          <h1 className='welcome_text'>Welcome to Snapseat</h1>
-        </div>
-      
+       <Navbar/>
 
-      <nav>
-        <Link to='/login' className='btn btn-outline-warning  ms-2 link_style'>Log In</Link>
-        <Link to='/signup' className='btn btn-outline-warning ms-2 link_style'>Sign Up</Link>
-        <Link to='/addeventticket' className='btn btn-outline-warning ms-2 link_style'>Add Event Ticket</Link>
-        <Link to='/' className='btn btn-outline-warning ms-2 link_style'>Get Event Ticket</Link>
+        {/* <nav className='App-header'>
+            <h3 className='snapseat_logo'>Snapseat</h3>
+            <Link to='/' className='btn btn-outline-dark ms-1 link_style'>Explore events</Link>
+            <Link to='/addeventticket' className='btn btn-outline-dark ms-1 link_style'>Create Event</Link>
+            <Link to='/login' className='btn btn-outline-dark  ms-1 link_style'>LogIn</Link>
+            <Link to='/signup' className='btn btn-outline-dark ms-1 link_style'>Register</Link>
+            
+            
        
       </nav>
-
+ */}
 
       <Routes>
         <Route path='/signup' element={<Signup/>} />
         <Route path='/login' element={<Signin/>} />
         <Route path='/addeventticket' element={<Addevent_ticket/>} />
         <Route path='/' element={<Getevent_ticket/>} />
-        <Route path='/mpesapayment' element={<Mpesapayment/>}/>
+        <Route path='/makepayment' element={<Mpesapayment/>}/>
 
 
       </Routes>

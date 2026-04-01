@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import image from '../logo.svg'
+
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import Mycarousel from './Mycarousel';
+
+import Mycategory from './Mycategory';
+import SearchBar from './Searchbar';
 const Getevent_ticket = () => {
   // declaring state variables
   const[products,setProducts]=useState([]);
@@ -38,8 +40,12 @@ const Getevent_ticket = () => {
   },[]);
   return (
     <div className='row'>
-      <h3 className='text-center'>Available Tickets</h3>
-      <Mycarousel/>
+   
+      <SearchBar />
+
+
+      <Mycategory />
+      
        {loading}
       <p> {error} </p>
 

@@ -9,9 +9,10 @@ const Footer = () => {
         <div style={styles.column}>
           <h3>About Us</h3>
           <p>
-            We are passionate about transforming everyday living through innovative 
-            smart home technology. Our goal is to make homes safer, more efficient, 
-            and more connected.
+            SnapSeat is your destination for discovering and purchasing tickets to 
+            concerts, festivals, sports, and live experiences, offering a fast, reliable
+            , and seamless way to never miss unforgettable moments ever.
+
           </p>
         </div>
 
@@ -43,10 +44,10 @@ const Footer = () => {
         <div style={styles.column}>
           <h3>Follow Us</h3>
           <div style={styles.socials}>
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">Instagram</a>
-            <a href="#">LinkedIn</a>
+            <a className="social_link" href="#">Facebook</a>
+            <a className="social_link" href="#">Twitter</a>
+            <a className="social_link" href="#">Instagram</a>
+            <a className="social_link" href="#">LinkedIn</a>
           </div>
         </div>
 
@@ -88,7 +89,7 @@ const styles = {
   },
   button: {
     padding: "10px",
-    background: "#00bcd4",
+    background: "#BF1D00",
     border: "none",
     color: "#fff",
     cursor: "pointer",
