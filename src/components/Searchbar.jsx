@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // const CATEGORIES = ['All', 'Music', 'Sports', 'Arts', 'Food & Drink', 'Tech', 'Comedy', 'Other'];
