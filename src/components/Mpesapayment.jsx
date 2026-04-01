@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import image from '../logo.svg'
+
 import { useLocation } from 'react-router-dom';
 import axios from 'axios';
 

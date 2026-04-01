@@ -3,28 +3,28 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const CATEGORIES = ['All', 'Music', 'Sports', 'Arts', 'Food & Drink', 'Tech', 'Comedy', 'Other'];
 
-const SearchBar = ({ events = [], onFilter }) => {
-  const [query, setQuery] = useState('');
-  const [activeCategory, setActiveCategory] = useState('All');
+// const SearchBar = ({ events = [], onFilter }) => {
+//   const [query, setQuery] = useState('');
+//   const [activeCategory, setActiveCategory] = useState('All');
 
-  const handleSearch = (newQuery, newCategory) => {
-    const result = events.filter((event) => {
-      const matchName = event.name?.toLowerCase().includes(newQuery.toLowerCase());
-      const matchCategory = newCategory === 'All' || event.category === newCategory;
-      return matchName && matchCategory;
-    });
-    onFilter(result);
-  };
+  // const handleSearch = (newQuery, newCategory) => {
+  //   const result = events.filter((event) => {
+  //     const matchName = event.name?.toLowerCase().includes(newQuery.toLowerCase());
+  //     const matchCategory = newCategory === 'All' || event.category === newCategory;
+  //     return matchName && matchCategory;
+  //   });
+  //   onFilter(result);
+  // };
 
-  const handleQueryChange = (e) => {
-    setQuery(e.target.value);
-    handleSearch(e.target.value, activeCategory);
-  };
+  // const handleQueryChange = (e) => {
+  //   setQuery(e.target.value);
+  //   handleSearch(e.target.value, activeCategory);
+  // };
 
-  const handleCategoryChange = (cat) => {
-    setActiveCategory(cat);
-    handleSearch(query, cat);
-  };
+  // const handleCategoryChange = (cat) => {
+  //   setActiveCategory(cat);
+  //   handleSearch(query, cat);
+  // };
 
   return (
      <div className=" mt-2 carousel-body search-section text-center">
@@ -52,7 +52,7 @@ const SearchBar = ({ events = [], onFilter }) => {
         </div>
     </div>
   );
-};
+
 
 export default SearchBar;
 
