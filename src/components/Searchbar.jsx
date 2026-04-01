@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const CATEGORIES = ['All', 'Music', 'Sports', 'Arts', 'Food & Drink', 'Tech', 'Comedy', 'Other'];
+// const CATEGORIES = ['All', 'Music', 'Sports', 'Arts', 'Food & Drink', 'Tech', 'Comedy', 'Other'];
 
 const SearchBar = () => {
-//   const [query, setQuery] = useState('');
+// //   const [query, setQuery] = useState('');
 //   const [activeCategory, setActiveCategory] = useState('All');
 
   // const handleSearch = (newQuery, newCategory) => {
@@ -38,7 +38,7 @@ const SearchBar = () => {
           className='search_input rounded-3 w-50 ' />
          <button className='search-button rounded-2 '>Search</button>
        </div>
-      <div className="d-flex flex-wrap gap-2 text-center">
+      {/* <div className="d-flex flex-wrap gap-2 text-center">
         {CATEGORIES.map((cat) => (
           <button
             key={cat}
@@ -49,7 +49,7 @@ const SearchBar = () => {
           </button>
         ))}
         
-        </div>
+        </div> */}
     </div>
   );
 }
