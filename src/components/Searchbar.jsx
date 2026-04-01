@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const CATEGORIES = ['All', 'Music', 'Sports', 'Arts', 'Food & Drink', 'Tech', 'Comedy', 'Other'];
 
-// const SearchBar = ({ events = [], onFilter }) => {
+const SearchBar = () => {
 //   const [query, setQuery] = useState('');
 //   const [activeCategory, setActiveCategory] = useState('All');
 
@@ -52,6 +52,7 @@ const CATEGORIES = ['All', 'Music', 'Sports', 'Arts', 'Food & Drink', 'Tech', 'C
         </div>
     </div>
   );
+}
 
 
 export default SearchBar;
