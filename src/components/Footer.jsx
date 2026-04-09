@@ -44,10 +44,10 @@ const Footer = () => {
         <div style={styles.column}>
           <h3>Follow Us</h3>
           <div style={styles.socials}>
-            <a className="social_link" href="facebook.com">Facebook</a>
-            <a className="social_link" href="X.com">X</a>
-            <a className="social_link" href="instagram.com">Instagram</a>
-            <a className="social_link" href="linkedin.com">LinkedIn</a>
+            <a className="social_link" href="#">Facebook</a>
+            <a className="social_link" href="#">Twitter</a>
+            <a className="social_link" href="#">Instagram</a>
+            <a className="social_link" href="#">LinkedIn</a>
           </div>
         </div>
 

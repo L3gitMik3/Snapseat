@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
-import Mycategory from './Mycategory';
+
 import SearchBar from './Searchbar';
 const Getevent_ticket = () => {
   // declaring state variables
@@ -44,7 +44,7 @@ const Getevent_ticket = () => {
       <SearchBar />
 
 
-      <Mycategory />
+     
       
        {loading}
       <p> {error} </p>

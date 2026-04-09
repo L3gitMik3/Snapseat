@@ -1,11 +1,11 @@
-
+import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.min.js'
-import{BrowserRouter as Router, Routes ,Route } from 'react-router-dom'
+import{BrowserRouter as Router, Routes ,Route ,Link} from 'react-router-dom'
 import Signup from './components/Signup';
-import Addeventticket from './components/Addevent_ticket';
-import Geteventticket from './components/Getevent_ticket';
+import Addevent_ticket from './components/Addevent_ticket';
+import Getevent_ticket from './components/Getevent_ticket';
 import Signin from './components/Signin';
 import Mpesapayment from './components/Mpesapayment';
 import Footer from './components/Footer'
@@ -32,8 +32,8 @@ function App() {
       <Routes>
         <Route path='/signup' element={<Signup/>} />
         <Route path='/login' element={<Signin/>} />
-        <Route path='/addeventticket' element={<Addeventticket/>} />
-        <Route path='/' element={<Geteventticket/>} />
+        <Route path='/addeventticket' element={<Addevent_ticket/>} />
+        <Route path='/' element={<Getevent_ticket/>} />
         <Route path='/makepayment' element={<Mpesapayment/>}/>
 
 
