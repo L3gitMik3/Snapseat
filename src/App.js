@@ -1,11 +1,11 @@
-import logo from './logo.svg';
+
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.min.js'
-import{BrowserRouter as Router, Routes ,Route ,Link} from 'react-router-dom'
+import{BrowserRouter as Router, Routes ,Route } from 'react-router-dom'
 import Signup from './components/Signup';
-import Addevent_ticket from './components/Addevent_ticket';
-import Getevent_ticket from './components/Getevent_ticket';
+import Addevent_ticket from './components/AddeventTicket';
+import Getevent_ticket from './components/GeteventTicket';
 import Signin from './components/Signin';
 import Mpesapayment from './components/Mpesapayment';
 import Footer from './components/Footer'
