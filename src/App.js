@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.min.js'
 import{BrowserRouter as Router, Routes ,Route } from 'react-router-dom'
 import Signup from './components/Signup';
-import Addevent_ticket from './components/AddeventTicket';
+import Addevent_ticket from './components/AddEventTicket';
 import Getevent_ticket from './components/GeteventTicket';
 import Signin from './components/Signin';
 import Mpesapayment from './components/Mpesapayment';
