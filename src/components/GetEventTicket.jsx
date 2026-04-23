@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 
 
 import SearchBar from './Searchbar';
-const Getevent_ticket = () => {
+const GetEventTicket = () => {
   // declaring state variables
   const[products,setProducts]=useState([]);
   const[loading,setLoading]=useState("");
@@ -72,4 +72,4 @@ const Getevent_ticket = () => {
   )
 }
 
-export default Getevent_ticket
+export default GetEventTicket

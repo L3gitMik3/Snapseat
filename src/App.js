@@ -4,8 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.min.js'
 import{BrowserRouter as Router, Routes ,Route } from 'react-router-dom'
 import Signup from './components/Signup';
-import Addevent_ticket from './components/AddEventTicket';
-import Getevent_ticket from './components/GetEventTicket';
+import AddEventTicket from './components/AddEventTicket';
+import GetEventTicket from './components/GetEventTicket';
 import Signin from './components/Signin';
 import Mpesapayment from './components/Mpesapayment';
 import Footer from './components/Footer'
@@ -32,8 +32,8 @@ function App() {
       <Routes>
         <Route path='/signup' element={<Signup/>} />
         <Route path='/login' element={<Signin/>} />
-        <Route path='/addeventticket' element={<Addevent_ticket/>} />
-        <Route path='/' element={<Getevent_ticket/>} />
+        <Route path='/addeventticket' element={<AddEventTicket/>} />
+        <Route path='/' element={<GetEventTicket/>} />
         <Route path='/makepayment' element={<Mpesapayment/>}/>
 
 

@@ -2,7 +2,7 @@ import axios from 'axios'
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-const Addevent_ticket = () => {
+const AddEventTicket = () => {
   // declaring state variables
   const [product_name,setProductName]=useState("")
   const[product_description,setProductDescription]=useState("")
@@ -100,4 +100,4 @@ const Addevent_ticket = () => {
   )
 }
 
-export default Addevent_ticket
+export default AddEventTicket
