@@ -8,6 +8,9 @@ const AddEventTicket = () => {
   const[product_description,setProductDescription]=useState("")
   const[product_cost,setProductCost]=useState("")
   const[product_photo,setProductPhoto]=useState("")
+  const[category,SetCategory]=useState("")
+  const[location,SetLocation]=useState("")
+  const[date,setDate]=useState("")
 
   // Status messages
   const[loading,setLoading]=useState("")
@@ -26,6 +29,9 @@ const AddEventTicket = () => {
     formData.append("product_description",product_description)
     formData.append("product_cost",product_cost)
     formData.append("product_photo",product_photo)
+    formData.append("category",category)
+    formData.append("date",date)
+    formData.append("location",location)
 
     // Adding base url to post data
     const response = await axios.post("http://michaelhyrax.alwaysdata.net/api/add_product", formData)
@@ -74,7 +80,7 @@ const AddEventTicket = () => {
         className='form-control' 
         type="date"
          placeholder='Enter the event date' 
-         onChange={(e)=>setProductName(e.target.value)} 
+         onChange={(e)=>setDate(e.target.value)} 
          required/><br />
          <label htmlFor="">Ticket cost in Kenyan Shillings</label><br />
         <input 
@@ -82,6 +88,16 @@ const AddEventTicket = () => {
          type="number"  
          placeholder='Enter the Ticket cost' 
          onChange={(e)=>setProductCost(e.target.value)}/><br />
+         <input 
+        className='form-control'
+         type="text"  
+         placeholder='Enter the event location' 
+         onChange={(e)=>SetLocation(e.target.value)}/><br />
+           <input 
+        className='form-control'
+         type="text"  
+         placeholder='Enter ticket category' 
+         onChange={(e)=>SetCategory(e.target.value)}/><br />
          <label htmlFor="">Ticket photo</label><br />
         <input 
         className='form-control' 
