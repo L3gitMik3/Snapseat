@@ -8,8 +8,8 @@ const AddEventTicket = () => {
   const[product_description,setProductDescription]=useState("")
   const[product_cost,setProductCost]=useState("")
   const[product_photo,setProductPhoto]=useState("")
-  const[category,SetCategory]=useState("")
-  const[location,SetLocation]=useState("")
+  const[category,setCategory]=useState("")
+  const[location,setLocation]=useState("")
   const[date,setDate]=useState("")
 
   // Status messages
