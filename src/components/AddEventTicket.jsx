@@ -88,11 +88,13 @@ const AddEventTicket = () => {
          type="number"  
          placeholder='Enter the Ticket cost' 
          onChange={(e)=>setProductCost(e.target.value)}/><br />
+<label htmlFor="">Location</label><br />
          <input 
         className='form-control'
          type="text"  
          placeholder='Enter the event location' 
          onChange={(e)=>SetLocation(e.target.value)}/><br />
+<label htmlFor="">Category</label><br />
            <input 
         className='form-control'
          type="text"  
