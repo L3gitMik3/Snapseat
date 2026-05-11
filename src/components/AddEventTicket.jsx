@@ -89,12 +89,21 @@ const Addevent_ticket = () => {
         onChange={(e)=>setProductPhoto(e.target.files[0])}
          required/><br />
         <label htmlFor="">Category</label><br />
-        <input 
-        className='form-control' 
-        type="text"
-         placeholder='Enter the event category' 
-         onChange={(e)=>setCategory(e.target.value)} 
-         required/><br />
+              <select
+          className='form-control'
+          onChange={(e) => setCategory(e.target.value)}
+          required
+          defaultValue=""
+        >
+          <option value="" disabled>Select event category</option>
+          <option value="Music">Music</option>
+          <option value="Sports">Sports</option>
+          <option value="Arts">Arts</option>
+          <option value="Food & Drinks">Food & Drinks</option>
+          <option value="Tech">Tech</option>
+          <option value="Comedy">Comedy</option>
+          <option value="Other">Other</option>
+        </select>
         <label htmlFor="">Location</label><br />
         <input 
         className='form-control' 
