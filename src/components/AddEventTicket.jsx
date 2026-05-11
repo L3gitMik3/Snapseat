@@ -33,7 +33,7 @@ const Addevent_ticket = () => {
     formData.append("date",date)
    
     // Adding base url to post data
-    const response = await axios.post("http://michaelhyrax.alwaysdata.net/api/add_product", formData)
+    const response = await axios.post("https://michaelhyrax.alwaysdata.net/api/add_product", formData)
     setLoading("")
     setSuccess(response.data.success)
     
