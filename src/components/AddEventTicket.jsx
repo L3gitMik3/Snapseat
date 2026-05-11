@@ -66,10 +66,8 @@ const Addevent_ticket = () => {
          <label htmlFor="">Event description</label><br />
         <textarea 
         className='form-control' 
-        
-        placeholder='Enter the Event description'
          onChange={(e)=>setProductDescription(e.target.value)}
-            required></textarea><br />
+            required>Enter the events description</textarea><br />
           
              <label htmlFor="">Event Date</label><br />
         <input 
@@ -82,7 +80,7 @@ const Addevent_ticket = () => {
         <input 
         className='form-control'
          type="number"  
-         placeholder='Enter the Ticket cost' 
+         placeholder='Enter the Ticket price' 
          onChange={(e)=>setProductCost(e.target.value)}/><br />
          <label htmlFor="">Ticket photo</label><br />
         <input 
