@@ -51,7 +51,7 @@ export default function SearchSection() {
   // Helper function to determine category from product name/description
   // You can modify this logic based on your actual product categorization
   const getProductCategory = (product) => {
-    const name = product.product_name.toLowerCase();
+    const name = product.category.toLowerCase();
     const desc = product.product_description.toLowerCase();
     
     if (name.includes("music") || desc.includes("concert") || desc.includes("jazz")) return "Music";
